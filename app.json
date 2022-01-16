@@ -4,7 +4,7 @@
     "slug": "UoMe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/icon.png",
+    "icon": "./app/assets/icon-app.png",
     "splash": {
       "image": "./app/assets/splash.png",
       "resizeMode": "contain",

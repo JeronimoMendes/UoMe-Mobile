@@ -1,14 +1,12 @@
 import React from 'react'
-import { Text } from 'react-native-paper'
-import { StyleSheet, View } from 'react-native';
-import Logo from '../Components/brandImage/Logo';
-
+import { StyleSheet, View, Image } from 'react-native';
 
 function SplashScreen() {
-	console.log("Hello")
 	return (
 		<View style={styles.container}>
-			<Logo />
+			<Image 
+				source={require("../assets/logo.png")}
+			/>
 		</View>
 	)
 }
@@ -22,5 +20,4 @@ const styles = StyleSheet.create({
 	},
   });
   
-
 export default SplashScreen

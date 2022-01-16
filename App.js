@@ -1,9 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useState } from 'react';
 import {
   Provider as PaperProvider,
 } from 'react-native-paper';
+import HomeScreen from './app/screens/HomeScreen';
 import SplashScreen from './app/screens/SplashScreen';
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
   return (
     <PaperProvider>
       <View style={styles.container}>
-        <SplashScreen />
+        <HomeScreen />
       </View>
     </PaperProvider>
   );
@@ -24,9 +24,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: '100%',
+    height: '100%',
   },
 });
