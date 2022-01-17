@@ -1,7 +1,14 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 
-function SplashScreen() {
+function SplashScreen({navigation}) {
+	useEffect(() => {
+		setTimeout(() => {
+			navigation.navigate('home')
+		}, 1500)
+	}, [])
+
 	return (
 		<View style={styles.container}>
 			<Image 
