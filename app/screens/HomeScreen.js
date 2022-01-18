@@ -34,9 +34,9 @@ const people = [
 	},
 ]
 
-function HomeScreen() {
+function HomeScreen({navigation}) {
 	const renderGroupsItem = ({item}) => {
-		return <GroupBox item={item} />
+		return <GroupBox item={item} navigation={navigation}/>
 	}
 
 	return (
@@ -76,7 +76,8 @@ function HomeScreen() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		flexDirection: "column"
+		flexDirection: "column",
+		backgroundColor: "#fff"
 	},
 	header: {
 		flex: 1,

@@ -1,12 +1,13 @@
 import React from 'react'
-import { StyleSheet, View, Text, Image } from 'react-native'
+import { StyleSheet, Text, Image, TouchableOpacity } from 'react-native'
 
 function GroupBox(props) {
 	return (
-		<View style={[styles.card, {marginLeft: props.item.id === 1 ? 24 : 0}]}>
+		<TouchableOpacity onPress={() => props.navigation.navigate("group", {group: props.item})}
+			style={[styles.card, {marginLeft: props.item.id === 1 ? 24 : 0}]}>
 			<Image source={props.item.image} style={styles.cardImage}/>
 			<Text style={styles.cardText}>{props.item.name}</Text>
-		</View>
+		</TouchableOpacity>
 	)
 }
 
