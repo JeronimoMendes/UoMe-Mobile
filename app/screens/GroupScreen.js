@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, StyleSheet, Text, Pressable, Image } from 'react-native'
+import MovementBar from '../Components/Movement/MovementBar'
 
 export default function GroupScreen(props) {
 	const group = props.route.params.group
@@ -15,6 +16,9 @@ export default function GroupScreen(props) {
 					<Image style={styles.groupImage} source={group.image}/>
 				</View>
 				<Text style={styles.groupNameText}>{group.name}</Text>
+				<View style={styles.movementsWrapper}>
+					<MovementBar/>
+				</View>
 			</View>
 		</View>
 	)
@@ -59,5 +63,8 @@ const styles = StyleSheet.create({
 		marginLeft: 24,
 		fontSize: 24,
 		top: -40
-	},	
+	},
+	movementsWrapper: {
+		marginLeft: 42
+	}
 })
