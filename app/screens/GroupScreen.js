@@ -8,10 +8,14 @@ export default function GroupScreen(props) {
 		return <MovementBar movement={movement.item}/>
 	}
 
+	const goBackAction = () => {
+		props.navigation.navigate("home")
+	}
+
 	return (
 		<View style={styles.screen}>
 			<View style={styles.goBackWrap}>
-				<Pressable style={styles.goBackButton}>
+				<Pressable style={styles.goBackButton} onPress={goBackAction}>
 					<Text>Go back</Text>
 				</Pressable>
 			</View>
