@@ -39,7 +39,7 @@ const groups = [
 				date: "2 days ago"
 			},
 			{
-				id: 1,
+				id: 4,
 				description: "Electricity",
 				amount: 14.2,
 				author: {
@@ -49,7 +49,7 @@ const groups = [
 				date: "Today"
 			},
 			{
-				id: 2,
+				id: 5,
 				description: "Water bill",
 				amount: 34.2,
 				author: {
@@ -59,7 +59,7 @@ const groups = [
 				date: "Yesterday"
 			},
 			{
-				id: 3,
+				id: 6,
 				description: "Dinner",
 				amount: 4.1,
 				author: {
@@ -69,7 +69,7 @@ const groups = [
 				date: "2 days ago"
 			},
 			{
-				id: 1,
+				id: 7,
 				description: "Electricity",
 				amount: 14.2,
 				author: {
@@ -79,7 +79,7 @@ const groups = [
 				date: "Today"
 			},
 			{
-				id: 2,
+				id: 8,
 				description: "Water bill",
 				amount: 34.2,
 				author: {
@@ -89,7 +89,7 @@ const groups = [
 				date: "Yesterday"
 			},
 			{
-				id: 3,
+				id: 9,
 				description: "Dinner",
 				amount: 4.1,
 				author: {
@@ -99,7 +99,7 @@ const groups = [
 				date: "2 days ago"
 			},
 			{
-				id: 1,
+				id: 10,
 				description: "Electricity",
 				amount: 14.2,
 				author: {
@@ -109,7 +109,7 @@ const groups = [
 				date: "Today"
 			},
 			{
-				id: 2,
+				id: 11,
 				description: "Water bill",
 				amount: 34.2,
 				author: {
@@ -119,7 +119,7 @@ const groups = [
 				date: "Yesterday"
 			},
 			{
-				id: 3,
+				id: 12,
 				description: "Dinner",
 				amount: 4.1,
 				author: {

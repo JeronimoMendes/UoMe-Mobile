@@ -28,6 +28,11 @@ export default function GroupScreen(props) {
 					vertical
 					showsVerticalScrollIndicator={false}
 				/>
+				<View style={styles.addMovementButtonWrapper}>
+					<Pressable style={styles.addMovementButton}>
+						<Image source={require("../assets/plus.png")}/>
+					</Pressable>
+				</View>
 			</View>
 		</View>
 	)
@@ -57,7 +62,7 @@ const styles = StyleSheet.create({
 		backgroundColor: "#fff",
 		flex: 7,
 		borderTopLeftRadius: 16,
-		borderTopRightRadius: 16
+		borderTopRightRadius: 16,
 	},
 	groupImage: {
 		width: 100,
@@ -76,5 +81,21 @@ const styles = StyleSheet.create({
 	movementsWrapper: {
 		paddingLeft: 24,
 		top: -26,
+	},
+	addMovementButton: {
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: 75,
+		height: 75,
+		borderRadius: 75,
+		backgroundColor: '#F5CBB0'
+	},
+	addMovementButtonText: {
+	},
+	addMovementButtonWrapper: {
+		marginTop: -14,
+		alignItems: 'center',
+		justifyContent: 'center',
+		marginBottom: 14
 	}
 })
