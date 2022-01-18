@@ -6,15 +6,144 @@ const groups = [
 	{
 		name: 'Home',
 		image: require("../assets/card_example.png"),
-		id: 1
+		id: 1,
+		movements: [
+			{
+				id: 1,
+				description: "Electricity",
+				amount: 14.2,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Today"
+			},
+			{
+				id: 2,
+				description: "Water bill",
+				amount: 34.2,
+				author: {
+					name: "Ines",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Yesterday"
+			},
+			{
+				id: 3,
+				description: "Dinner",
+				amount: 4.1,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "2 days ago"
+			},
+			{
+				id: 1,
+				description: "Electricity",
+				amount: 14.2,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Today"
+			},
+			{
+				id: 2,
+				description: "Water bill",
+				amount: 34.2,
+				author: {
+					name: "Ines",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Yesterday"
+			},
+			{
+				id: 3,
+				description: "Dinner",
+				amount: 4.1,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "2 days ago"
+			},
+			{
+				id: 1,
+				description: "Electricity",
+				amount: 14.2,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Today"
+			},
+			{
+				id: 2,
+				description: "Water bill",
+				amount: 34.2,
+				author: {
+					name: "Ines",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Yesterday"
+			},
+			{
+				id: 3,
+				description: "Dinner",
+				amount: 4.1,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "2 days ago"
+			},
+			{
+				id: 1,
+				description: "Electricity",
+				amount: 14.2,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Today"
+			},
+			{
+				id: 2,
+				description: "Water bill",
+				amount: 34.2,
+				author: {
+					name: "Ines",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "Yesterday"
+			},
+			{
+				id: 3,
+				description: "Dinner",
+				amount: 4.1,
+				author: {
+					name: "jeronimo",
+					image: require("../assets/jeronimo.jpg")
+				},
+				date: "2 days ago"
+			},
+			
+		]
 	},{
 		name: 'Trip to France',
 		image: require("../assets/card_example.png"),
-		id: 2
+		id: 2,
+		movements: [
+
+		]
 	},{
 		name: 'Family',
 		image: require("../assets/card_example.png"),
-		id: 3
+		id: 3,
+		movements: [
+			
+		]
 	},
 ]
 

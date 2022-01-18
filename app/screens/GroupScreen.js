@@ -1,9 +1,13 @@
 import React from 'react'
-import { View, StyleSheet, Text, Pressable, Image } from 'react-native'
+import { View, StyleSheet, Text, Pressable, Image, FlatList } from 'react-native'
 import MovementBar from '../Components/Movement/MovementBar'
 
 export default function GroupScreen(props) {
 	const group = props.route.params.group
+	const renderMovement = (movement) => {
+		return <MovementBar movement={movement.item}/>
+	}
+
 	return (
 		<View style={styles.screen}>
 			<View style={styles.goBackWrap}>
@@ -16,9 +20,14 @@ export default function GroupScreen(props) {
 					<Image style={styles.groupImage} source={group.image}/>
 				</View>
 				<Text style={styles.groupNameText}>{group.name}</Text>
-				<View style={styles.movementsWrapper}>
-					<MovementBar/>
-				</View>
+				<FlatList 
+					style={styles.movementsWrapper}
+					data={group.movements}
+					renderItem={renderMovement}
+					keyExtractor={(item) => item.id}
+					vertical
+					showsVerticalScrollIndicator={false}
+				/>
 			</View>
 		</View>
 	)
@@ -65,6 +74,7 @@ const styles = StyleSheet.create({
 		top: -40
 	},
 	movementsWrapper: {
-		marginLeft: 42
+		paddingLeft: 24,
+		top: -26,
 	}
 })
