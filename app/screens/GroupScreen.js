@@ -12,6 +12,10 @@ export default function GroupScreen(props) {
 		props.navigation.navigate("home")
 	}
 
+	const createMovementAction = () => {
+		props.navigation.navigate("movement", {isGroup: true, item: group})
+	}
+
 	return (
 		<View style={styles.screen}>
 			<View style={styles.goBackWrap}>
@@ -33,7 +37,7 @@ export default function GroupScreen(props) {
 					showsVerticalScrollIndicator={false}
 				/>
 				<View style={styles.addMovementButtonWrapper}>
-					<Pressable style={styles.addMovementButton}>
+					<Pressable style={styles.addMovementButton} onPress={createMovementAction}>
 						<Image source={require("../assets/plus.png")}/>
 					</Pressable>
 				</View>

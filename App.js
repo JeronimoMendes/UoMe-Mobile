@@ -7,6 +7,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './app/screens/HomeScreen';
 import SplashScreen from './app/screens/SplashScreen';
 import GroupScreen from './app/screens/GroupScreen';
+import MovementScreen from './app/screens/MovementScreen';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +20,7 @@ export default function App() {
 						<Stack.Screen name="splash" component={SplashScreen} options={{headerShown: false}}/>
 						<Stack.Screen name="home" component={HomeScreen} options={{headerShown: false}}/>
 						<Stack.Screen name="group" component={GroupScreen} options={{headerShown: false}}/>
+						<Stack.Screen name="movement" component={MovementScreen} options={{headerShown: false}}/>
 					</Stack.Navigator>
 				</View>
 			</NavigationContainer>
