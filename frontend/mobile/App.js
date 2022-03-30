@@ -1,7 +1,5 @@
 import { StyleSheet, View } from 'react-native';
-import {
-	Provider as PaperProvider,
-} from 'react-native-paper';
+import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './app/screens/HomeScreen';
@@ -17,10 +15,26 @@ export default function App() {
 			<NavigationContainer>
 				<View style={styles.container}>
 					<Stack.Navigator>
-						<Stack.Screen name="splash" component={SplashScreen} options={{headerShown: false}}/>
-						<Stack.Screen name="home" component={HomeScreen} options={{headerShown: false}}/>
-						<Stack.Screen name="group" component={GroupScreen} options={{headerShown: false}}/>
-						<Stack.Screen name="movement" component={MovementScreen} options={{headerShown: false}}/>
+						<Stack.Screen
+							name='splash'
+							component={SplashScreen}
+							options={{ headerShown: false }}
+						/>
+						<Stack.Screen
+							name='home'
+							component={HomeScreen}
+							options={{ headerShown: false }}
+						/>
+						<Stack.Screen
+							name='group'
+							component={GroupScreen}
+							options={{ headerShown: false }}
+						/>
+						<Stack.Screen
+							name='movement'
+							component={MovementScreen}
+							options={{ headerShown: false }}
+						/>
 					</Stack.Navigator>
 				</View>
 			</NavigationContainer>
@@ -30,7 +44,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
 	container: {
-		width: '100%',
 		height: '100%',
+		width: '100%',
 	},
 });

@@ -1,32 +1,33 @@
 {
-  "name": "my-app",
+  "name": "uome",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"**/*.{js,vue}\" --write",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "setup:backend": "cd backend && npm install",
+    "setup:frontend": "cd frontend && npm install"
   },
-  "dependencies": {
-    "@react-navigation/native": "^6.0.6",
-    "@react-navigation/stack": "^6.0.11",
-    "expo": "~44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3",
-    "react-native-gesture-handler": "^2.2.0",
-    "react-native-paper": "^4.11.2",
-    "react-native-remote-svg": "^2.0.6",
-    "react-native-safe-area-context": "3.3.2",
-    "react-native-screens": "~3.10.1",
-    "react-native-web": "0.17.1",
-    "react-native-webview": "11.15.0"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeronimoMendes/UoMe-Mobile.git"
   },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeronimoMendes/UoMe-Mobile/issues"
+  },
+  "homepage": "https://github.com/JeronimoMendes/UoMe-Mobile#readme",
   "devDependencies": {
-    "@babel/core": "^7.12.9"
-  },
-  "private": true
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-native": "^4.0.0",
+    "prettier": "^2.6.1"
+  }
 }

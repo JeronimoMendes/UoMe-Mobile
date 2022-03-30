@@ -1,0 +1,51 @@
+{
+	"extends": ["prettier"],
+	"plugins": ["prettier"],
+	"rules": {
+	  "prettier/prettier": ["error"]
+	},
+	"env": {
+	  "node": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"allowImportExportEverywhere": true
+	},
+	"overrides": [
+	  {
+		"files": ["backend/**"],
+		"extends": ["eslint:recommended", "prettier", "plugin:node/recommended"],
+		"env": {
+		  "es6": true
+		}
+	  },
+	  {
+		"files": ["frontend/web/**"],
+		"extends": [
+		  "plugin:react/recommended",
+		  "eslint:recommended",
+		  "plugin:prettier/recommended",
+		  "prettier"
+		]
+	  },
+	  {
+		"files": ["frontend/mobile/**"],
+		"extends": [
+		  "plugin:react-native/all",
+		  "eslint:recommended",
+		  "plugin:prettier/recommended",
+		  "prettier"
+		],
+		"rules": {
+			"react-native/no-unused-styles": 2,
+			"react-native/split-platform-components": 2,
+			"react-native/no-inline-styles": 0,
+			"react-native/no-color-literals": 0,
+			"react-native/no-raw-text": 2,
+			"react-native/no-single-element-style-arrays": 2,
+			"no-unused-vars": 0
+		}
+	  }
+	]
+  }
