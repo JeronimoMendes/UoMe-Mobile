@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "migrate": "npx knex migrate:latest --knexfile db/knexfile.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "dotenv": "^16.0.0",
     "knex": "^1.0.4",
     "nodemon": "^2.0.15",
     "pg": "^8.7.3"
