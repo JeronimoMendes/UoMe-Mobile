@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
+    "joi": "^17.6.0",
     "knex": "^1.0.4",
     "nodemon": "^2.0.15",
     "pg": "^8.7.3"
