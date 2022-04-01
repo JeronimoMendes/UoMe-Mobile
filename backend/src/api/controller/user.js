@@ -1,6 +1,4 @@
 // Handles business logic
 module.exports = {
-	addUser(req, res) {
-		
-	}
-}
+	addUser(req, res) {},
+};
