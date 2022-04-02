@@ -5,6 +5,9 @@ const userCreate = Joi.object({
 	email: Joi.string().email(),
 });
 
+const userID = Joi.number().integer().positive();
+
 module.exports = {
 	userCreate,
+	userID
 };
