@@ -11,13 +11,13 @@ exports.up = async (knex) => {
 
 	await knex.schema.table('transaction', (table) => {
 		table.integer('group_id').references('id').inTable('group');
-	})
+	});
 
 	await knex.schema.createTable('user_group', (table) => {
 		table.increments('id').primary();
 		table.integer('user_id').references('id').inTable('user');
 		table.integer('group_id').references('id').inTable('group');
-	})
+	});
 };
 
 /**
@@ -27,9 +27,10 @@ exports.up = async (knex) => {
 exports.down = async (knex) => {
 	await knex.schema.table('transaction', (table) => {
 		table.dropColumn('group_id');
-	})
+	});
 
-	await knex.schema.dropTableIfExists('user_group');7
+	await knex.schema.dropTableIfExists('user_group');
+	7;
 
 	await knex.schema.dropTableIfExists('group');
 };

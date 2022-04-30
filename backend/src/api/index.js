@@ -6,6 +6,6 @@ const router = require('express').Router();
 
 router.use('/', user);
 router.use('/', transaction);
-router.use('/', group)
+router.use('/', group);
 
 module.exports = router;

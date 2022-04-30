@@ -17,8 +17,6 @@ module.exports = {
 			const result = await service.addGroup(req.db, data);
 			return result;
 		} catch (e) {
-			console.log(e)
-
 			return null;
 		}
 	},
@@ -34,9 +32,9 @@ module.exports = {
 
 		try {
 			const user = service.getGroup(req.db, data);
-			return user
+			return user;
 		} catch (e) {
 			return null;
 		}
-	}
+	},
 };

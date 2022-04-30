@@ -8,8 +8,11 @@ module.exports = {
 	},
 
 	async getUser(db, id) {
-		const [result] = await db.select(...fields).where('id', id).from('user');
+		const [result] = await db
+			.select(...fields)
+			.where('id', id)
+			.from('user');
 
 		return result ? result : null;
-	}
+	},
 };

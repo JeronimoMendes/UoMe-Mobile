@@ -32,9 +32,9 @@ module.exports = {
 
 		try {
 			const user = service.getTransaction(req.db, data);
-			return user
+			return user;
 		} catch (e) {
 			return null;
 		}
-	}
+	},
 };

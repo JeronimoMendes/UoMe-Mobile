@@ -9,5 +9,5 @@ const userID = Joi.number().integer().positive();
 
 module.exports = {
 	userCreate,
-	userID
+	userID,
 };
