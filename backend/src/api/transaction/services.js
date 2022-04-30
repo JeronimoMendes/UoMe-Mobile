@@ -6,7 +6,8 @@ module.exports = {
 		console.log(data)
 		const [id] = await db.insert({
 			value: data.value,
-			description: data.description
+			description: data.description,
+			group_id: data.group
 		}).into('transaction').returning('id');
 
 		// Create a user_transaction row for each user in the new transaction
