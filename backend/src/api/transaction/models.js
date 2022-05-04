@@ -5,6 +5,7 @@ const transactionCreate = Joi.object({
 	description: Joi.string().required(),
 	users: Joi.array().items(Joi.number().integer().positive()).required(),
 	group: Joi.number().integer().positive().required(),
+	author: Joi.number().integer().positive().required(),
 });
 
 const transactionID = Joi.number().integer().positive();

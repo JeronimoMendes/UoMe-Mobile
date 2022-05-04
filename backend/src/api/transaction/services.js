@@ -1,5 +1,5 @@
 // Responsible for using the db
-const fields = ['created_at', 'description', 'value'];
+const fields = ['created_at', 'description', 'value', 'author'];
 
 module.exports = {
 	async addTransaction(db, data) {
@@ -8,6 +8,7 @@ module.exports = {
 				value: data.value,
 				description: data.description,
 				group_id: data.group,
+				author: data.author,
 			})
 			.into('transaction')
 			.returning('id');
@@ -26,11 +27,20 @@ module.exports = {
 	},
 
 	async getTransaction(db, id) {
-		const [result] = await db
+		const [transaction] = await db
 			.select(...fields)
 			.where('id', id)
 			.from('transaction');
 
-		return result ? result : null;
+		if (transaction === null) return null;
+
+		const author = await db.select('id', 'name').where('id', transaction.author).from('user');
+
+		return {
+			value: transaction.value,
+			description: transaction.description,
+			createdAt: transaction.created_at,
+			author: author[0],
+		};
 	},
 };
